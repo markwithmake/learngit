@@ -1199,7 +1199,6 @@ static int do_read_toc(struct fsg_common *common, struct fsg_buffhd *bh)
 		curlun->sense_data = SS_INVALID_FIELD_IN_CDB;
 		return -EINVAL;
 	}
-        printf("@@mk:test");
     /* rlk.mk 202004 change to enable CD-ROM emulation to work with Mac OS-X begin */
 	#if 0
 	memset(buf, 0, 20);
